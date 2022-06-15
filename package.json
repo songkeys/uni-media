@@ -1,0 +1,44 @@
+{
+  "name": "node-lib-template",
+  "version": "1.0.0",
+  "description": "A Node.js Library starter template",
+  "keywords": [
+    "node",
+    "library",
+    "template"
+  ],
+  "bugs": {
+    "url": "https://github.com/Songkeys/node-lib-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Songkeys/node-lib-template.git"
+  },
+  "license": "MIT",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:fast -- --dts-resolve",
+    "build:dev": "npm run build:fast -- --watch",
+    "build:fast": "tsup",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "tsup": "^6.0.1",
+    "typescript": "^4.7.3",
+    "vitest": "^0.12.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
