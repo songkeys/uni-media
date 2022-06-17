@@ -2,6 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import './../style/global.css'
 import { getHighlighter, setCDN } from 'shiki'
+setCDN('./../../node_modules/shiki')
 
 let currentExampleTabIndex = ref(0)
 
@@ -89,7 +90,6 @@ let currentRenderingCode = computed(
 )
 
 onMounted(async () => {
-  setCDN('./../../node_modules/shiki/')
   const highlighter = await getHighlighter({ theme: 'dark-plus' })
 
   examples.value = examples.value.map((example) => ({
