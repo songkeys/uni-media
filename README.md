@@ -35,11 +35,9 @@
   <p align="center">
     Easily embed any types of media (images, videos, audios, pdfs, 3d-models...) in your web app
     <br />
-    <a href="https://github.com/Songkeys/uni-media"><strong>Explore the docs »</strong></a>
+    <a href="https://uni-media.vercel.app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Songkeys/uni-media">View Demo</a>
-    ·
     <a href="https://github.com/Songkeys/uni-media/issues">Report Bug</a>
     ·
     <a href="https://github.com/Songkeys/uni-media/issues">Request Feature</a>
@@ -72,20 +70,23 @@ Features and acknowledgements:
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Install:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```bash
+npm i uni-media
+```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Use:
 
-## Roadmap
+```html
+<uni-media
+  alt="A cat"
+  title="I'm a cat"
+  src="https://placekitten.com/200/300"
+/>
+```
 
-- [ ] Add Changelog
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
-
-See the [open issues](https://github.com/Songkeys/uni-media/issues) for a full list of proposed features (and known issues).
+[More on docs](https://uni-media.vercel.app).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -106,6 +107,6 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
