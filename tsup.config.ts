@@ -1,13 +1,20 @@
 import { defineConfig } from 'tsup'
 
-export default defineConfig((options) => ({
-  entry: {
-    index: './src/index.ts',
-  },
+import nodeLibPlugin from 'node-stdlib-browser/helpers/esbuild/plugin'
+import stdLibBrowser from 'node-stdlib-browser'
+
+export default defineConfig({
+  entry: ['src/uni-media.ts'],
   outDir: 'dist',
-  format: ['cjs', 'esm', 'iife'],
+  dts: true,
+  bundle: true,
   clean: true,
-  sourcemap: true,
-  minify: !options.watch,
-  target: 'node14',
-}))
+  format: ['iife', 'cjs', 'esm'],
+  platform: 'browser',
+  define: {
+    global: 'window',
+    Buffer: 'Buffer',
+  },
+  inject: ['./node_modules/node-stdlib-browser/helpers/esbuild/shim.js'],
+  esbuildPlugins: [nodeLibPlugin(stdLibBrowser)],
+})

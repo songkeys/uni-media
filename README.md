@@ -9,40 +9,40 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-[npm-version]: https://img.shields.io/npm/v/node-lib-template.svg?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/node-lib-template
-[contributors-shield]: https://img.shields.io/github/contributors/Songkeys/node-lib-template.svg?style=for-the-badge
-[contributors-url]: https://github.com/Songkeys/node-lib-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Songkeys/node-lib-template.svg?style=for-the-badge
-[forks-url]: https://github.com/Songkeys/node-lib-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/Songkeys/node-lib-template.svg?style=for-the-badge
-[stars-url]: https://github.com/Songkeys/node-lib-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Songkeys/node-lib-template.svg?style=for-the-badge
-[issues-url]: https://github.com/Songkeys/node-lib-template/issues
-[license-shield]: https://img.shields.io/github/license/Songkeys/node-lib-template.svg?style=for-the-badge
-[license-url]: https://github.com/Songkeys/node-lib-template/blob/master/LICENSE.txt
+[npm-version]: https://img.shields.io/npm/v/uni-media.svg?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/uni-media
+[contributors-shield]: https://img.shields.io/github/contributors/Songkeys/uni-media.svg?style=for-the-badge
+[contributors-url]: https://github.com/Songkeys/uni-media/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Songkeys/uni-media.svg?style=for-the-badge
+[forks-url]: https://github.com/Songkeys/uni-media/network/members
+[stars-shield]: https://img.shields.io/github/stars/Songkeys/uni-media.svg?style=for-the-badge
+[stars-url]: https://github.com/Songkeys/uni-media/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Songkeys/uni-media.svg?style=for-the-badge
+[issues-url]: https://github.com/Songkeys/uni-media/issues
+[license-shield]: https://img.shields.io/github/license/Songkeys/uni-media.svg?style=for-the-badge
+[license-url]: https://github.com/Songkeys/uni-media/blob/master/LICENSE.txt
 
 <!-- PROJECT LOGO -->
 
 <br />
 <div align="center">
-  <a href="https://github.com/Songkeys/node-lib-template">
-    <img src="images/logo.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Songkeys/uni-media">
+    <img src="/hero.png" alt="Logo" width="160" height="160">
   </a>
 
-  <h2 align="center">Node.js-Library-Template</h2>
+  <h2 align="center">uni-media</h2>
 
   <p align="center">
-    A Node.js TypeScript library starter template to jumpstart your projects!
+    Easily embed any types of media (images, videos, audios, pdfs, 3d-models...) in your web app
     <br />
-    <a href="https://github.com/Songkeys/node-lib-template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Songkeys/uni-media"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Songkeys/node-lib-template">View Demo</a>
+    <a href="https://github.com/Songkeys/uni-media">View Demo</a>
     ·
-    <a href="https://github.com/Songkeys/node-lib-template/issues">Report Bug</a>
+    <a href="https://github.com/Songkeys/uni-media/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Songkeys/node-lib-template/issues">Request Feature</a>
+    <a href="https://github.com/Songkeys/uni-media/issues">Request Feature</a>
   </p>
 </div>
 
@@ -55,7 +55,7 @@ A Node.js TypeScript library starter template to jumpstart your projects!
 ## Getting Started
 
 1. Use this template to create your own library.
-2. Replace all `node-lib-template` in the code with your project's name.
+2. Replace all `uni-media` in the code with your project's name.
 3. Replace all `Songkeys` in the code with your GitHub username.
 
 Features and acknowledgements:
@@ -85,7 +85,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - [ ] Chinese
   - [ ] Spanish
 
-See the [open issues](https://github.com/Songkeys/node-lib-template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Songkeys/uni-media/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

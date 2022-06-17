@@ -1,18 +1,18 @@
 {
-  "name": "node-lib-template",
-  "version": "1.0.0",
-  "description": "A Node.js Library starter template",
+  "name": "uni-media",
+  "version": "0.1.0",
+  "description": "Easily embed any types of media (images, videos, audios, pdfs, 3d-models...) in your web app",
   "keywords": [
     "node",
     "library",
     "template"
   ],
   "bugs": {
-    "url": "https://github.com/Songkeys/node-lib-template/issues"
+    "url": "https://github.com/Songkeys/uni-media/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Songkeys/node-lib-template.git"
+    "url": "https://github.com/Songkeys/uni-media.git"
   },
   "license": "MIT",
   "exports": {
@@ -29,14 +29,25 @@
     "build": "npm run build:fast -- --dts-resolve",
     "build:dev": "npm run build:fast -- --watch",
     "build:fast": "tsup",
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:serve": "vitepress serve docs",
     "prepublishOnly": "npm run build",
     "test": "vitest run"
   },
   "devDependencies": {
-    "prettier": "^2.5.1",
-    "tsup": "^6.0.1",
+    "@google/model-viewer": "^1.12.0",
+    "@types/mime": "^2.0.3",
+    "file-type": "^17.1.2",
+    "lit": "^2.2.6",
+    "mime": "^3.0.0",
+    "node-stdlib-browser": "^1.2.0",
+    "prettier": "^2.7.0",
+    "ts-lit-plugin": "^1.2.1",
+    "tsup": "^6.1.2",
     "typescript": "^4.7.3",
-    "vitest": "^0.12.6"
+    "vitepress": "^1.0.0-alpha.2",
+    "vitest": "^0.15.1"
   },
   "publishConfig": {
     "access": "public"

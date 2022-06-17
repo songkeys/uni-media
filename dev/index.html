@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;uni-media> Demo</title>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../dist/uni-media.global.js"></script>
+  </head>
+  <body>
+    <script>
+      function handleGetFiletype(e) {
+        console.log('getFiletype', e)
+      }
+      document.addEventListener('filetype', handleGetFiletype)
+    </script>
+    <h3>Image</h3>
+    <uni-media
+      alt="A cat"
+      title="I'm a cat"
+      src="https://placekitten.com/200/300"
+    >
+      <div slot="loading">Loading...</div>
+    </uni-media>
+
+    <h3>Video</h3>
+    <uni-media
+      src="ipfs://bafybeigg55zmqvfouox64ljpiqrt4lscacgcf77chmz4evgqlmicfk2rni/BigBuckBunny.mp4"
+      width="500"
+      height="350"
+    ></uni-media>
+
+    <h3>Audio</h3>
+    <uni-media
+      src="https://raw.githubusercontent.com/Songkeys/oss/master/mac/13.01.mp3"
+    ></uni-media>
+
+    <h3>GLB model</h3>
+    <uni-media
+      src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+      camera-controls
+      enable-pan
+      poster="https://modelviewer.dev/shared-assets/models/NeilArmstrong.webp"
+      seamless-poster
+      style="height: 300px; width: 300px"
+      onclick="console.log('clicked')"
+    ></uni-media>
+
+    <h3>PDF</h3>
+    <uni-media
+      src="https://docs.rss3.io/assets/files/RSS3-Whitepaper-6fcdadb8afda04da7de5f48c0a1935c0.pdf"
+    ></uni-media>
+
+    <h3>HTML</h3>
+    <uni-media src="./files/a.html"></uni-media>
+
+    <h3>Error</h3>
+    <uni-media src="https://404">
+      <div slot="loading">Loading...</div>
+      <!-- <div slot="error">Error occurs!</div> -->
+    </uni-media>
+
+    <h3>Use in React</h3>
+    <div id="react-root"></div>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      const domContainer = document.querySelector('#react-root')
+      const root = ReactDOM.createRoot(domContainer)
+      const ReactDemo = (
+        <div>
+          <div>This is rendered by React</div>
+          <uni-media
+            alt="A cat"
+            title="I'm a cat"
+            src="https://placekitten.com/200/300"
+          ></uni-media>
+        </div>
+      )
+      root.render(ReactDemo)
+    </script>
+
+    <h3>Use in Vue</h3>
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="vue-root">
+      <div>{{ message }}</div>
+      <uni-media
+        alt="A cat"
+        title="I'm a cat"
+        src="https://placekitten.com/200/300"
+      ></uni-media>
+    </div>
+    <script>
+      const VueDemo = {
+        data() {
+          return {
+            message: 'This is rendered by Vue',
+          }
+        },
+      }
+
+      Vue.createApp(VueDemo).mount('#vue-root')
+    </script>
+  </body>
+</html>
