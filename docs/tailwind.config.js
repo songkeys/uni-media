@@ -13,4 +13,7 @@ module.exports = {
     themes: ['forest'],
   },
   plugins: [require('daisyui')],
+  corePlugins: {
+    preflight: false,
+  },
 }

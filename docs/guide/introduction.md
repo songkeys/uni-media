@@ -35,8 +35,10 @@ Luckily, we can use the `uni-media` to display any media in a web app with only 
 />
 ```
 
-Live preview:
+Preview:
 
-<uni-media src="ipfs://QmPMFdEeHdYsnLaN9jTFPKwVpNjVwDeL1Ey2u5zUxewnQS" style="max-width: 300px;" />
+<img src="https://bafybeiapamvkmv3qwfft5c3q4axgyd56y3izzedozejleabtejx4xx3bam.ipfs.cf-ipfs.com/" style="max-width: 300px;" >
+
+<!-- <uni-media src="ipfs://QmPMFdEeHdYsnLaN9jTFPKwVpNjVwDeL1Ey2u5zUxewnQS" style="max-width: 300px;" /> -->
 
 This web-component does the dirty job for you, in a performant way.

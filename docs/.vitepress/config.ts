@@ -11,10 +11,10 @@ export default defineConfig({
 
     nav: [
       { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide' },
-      {
-        text: 'Releases',
-        link: 'https://github.com/Songkeys/uni-media/releases',
-      },
+      // {
+      //   text: 'Releases',
+      //   link: 'https://github.com/Songkeys/uni-media/releases',
+      // },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Songkeys/uni-media' },

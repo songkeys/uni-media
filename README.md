@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Songkeys/uni-media">
-    <img src="/hero.png" alt="Logo" width="160" height="160">
+    <img src="/docs/public/hero.png" alt="Logo" width="160" height="160">
   </a>
 
   <h2 align="center">uni-media</h2>

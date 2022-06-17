@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import './../../../dist/uni-media'
 import './../style/global.css'
 import { getHighlighter, setCDN } from 'shiki'
 

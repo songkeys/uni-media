@@ -9,6 +9,7 @@ export default defineConfig({
   dts: true,
   bundle: true,
   clean: true,
+  minify: true,
   format: ['iife', 'cjs', 'esm'],
   platform: 'browser',
   define: {

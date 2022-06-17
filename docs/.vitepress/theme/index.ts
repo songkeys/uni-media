@@ -4,6 +4,14 @@ import HomePage from '../components/HomePage.vue'
 
 export default {
   ...Theme,
+  async enhanceApp({ app }) {
+    if (typeof window === 'undefined') {
+      return
+    }
+
+    const UniMedia = (await import('./../../../dist/uni-media')).UniMedia
+    app.component('uni-media', UniMedia)
+  },
   Layout() {
     return h(Theme.Layout, null, {
       'home-features-after': () => h(HomePage),
