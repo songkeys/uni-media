@@ -18,7 +18,7 @@ In real-world applications, we often need to display media in a variety of ways.
 
 ## Case: NFT display
 
-This problem occurs a lot, for example, in displaying NFTs or IPFS content. The URL of one (digital art) item will probably looks like this:
+This problem occurs a lot, for example, in displaying NFTs or IPFS content. The URL of one (digital art) item will probably look like this:
 
 ```
 ipfs://QmPMFdEeHdYsnLaN9jTFPKwVpNjVwDeL1Ey2u5zUxewnQS

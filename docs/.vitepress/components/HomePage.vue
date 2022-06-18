@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import './../style/global.css'
 import { getHighlighter, setCDN } from 'shiki'
-setCDN('./../../node_modules/shiki')
+setCDN('https://unpkg.com/shiki/')
 
 let currentExampleTabIndex = ref(0)
 
@@ -21,7 +21,7 @@ let examples = ref([
     title="I'm a cat"
     src="https://placekitten.com/200/300"
   />`,
-    lang: 'html',
+    lang: 'vue-html',
     codeHighlighted: '',
     lineOptions: [{ line: 4, classes: ['bg-gray-700'] }],
   },
@@ -67,7 +67,7 @@ let examples = ref([
       style="height: 300px; width: 300px"
     />
   </template>`,
-    lang: 'vue',
+    lang: 'vue-html',
     codeHighlighted: '',
     lineOptions: [{ line: 3, classes: ['bg-gray-700'] }],
   },
@@ -79,7 +79,7 @@ let examples = ref([
     codeToHightlight: `<uni-media
     src="ipfs://bafybeichjzix3m6m3wa24m5ukxnkzouiyp67kqle7gscfeisrgdgarqfva/a.html"
   />`,
-    lang: 'html',
+    lang: 'vue-html',
     codeHighlighted: '',
     lineOptions: [{ line: 2, classes: ['bg-gray-700'] }],
   },
@@ -90,7 +90,10 @@ let currentRenderingCode = computed(
 )
 
 onMounted(async () => {
-  const highlighter = await getHighlighter({ theme: 'dark-plus' })
+  const highlighter = await getHighlighter({
+    theme: 'dark-plus',
+    langs: ['vue-html', 'jsx'],
+  })
 
   examples.value = examples.value.map((example) => ({
     ...example,
@@ -107,7 +110,7 @@ onMounted(async () => {
 
   <div class="content mx-auto">
     <main class="main">
-      <h2 class="text-center font-medium leading-tight text-5xl my-5">
+      <h2 class="text-center font-extrabold leading-tight text-5xl my-5">
         Take a Glance
       </h2>
       <div class="vp-doc flex flex-col items-center mt-10">

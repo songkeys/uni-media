@@ -33,7 +33,7 @@
   <h2 align="center">uni-media</h2>
 
   <p align="center">
-    Easily embed any types of media (images, videos, audios, pdfs, 3d-models...) in your web app
+    Easily embed any types of media in your web app with only one line of code.
     <br />
     <a href="https://uni-media.vercel.app"><strong>Explore the docs »</strong></a>
     <br />
@@ -46,25 +46,11 @@
 
 ## About The Project
 
-A Node.js TypeScript library starter template to jumpstart your projects!
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Getting Started
-
-1. Use this template to create your own library.
-2. Replace all `uni-media` in the code with your project's name.
-3. Replace all `Songkeys` in the code with your GitHub username.
-
-Features and acknowledgements:
-
-1. Pure TypeScript.
-2. Bundling with [`tsup`](https://github.com/egoist/tsup).
-3. Testing with [`vitest`](https://vitest.dev/)
-4. Releasing with GitHub Action [`npm-publish`](https://github.com/JS-DevTools/npm-publish).
-5. Automatically creating GitHub tags, releases and changelogs with [`changelogithub`](https://github.com/antfu/changelogithub).
-
-> To use GitHub Actions to publish and release library, you need `GH_TOKEN` and `NPM_TOKEN` environment variables configured in your repository.
+- No more verbose code (`<img>`/`<video>`/`<audio>`/`<model-viewer>`/...) to embed any types of media in your web app.
+- No more worries about the unknown media source.
+- With only one line of code (`<uni-media>`).
+- A web-component that fits in any framework (React, Vue, Angular, etc.).
+- IPFS supported. (Example case: displaying NFTs!)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
