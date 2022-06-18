@@ -4,7 +4,7 @@ import nodeLibPlugin from 'node-stdlib-browser/helpers/esbuild/plugin'
 import stdLibBrowser from 'node-stdlib-browser'
 
 export default defineConfig({
-  entry: ['src/uni-media.ts'],
+  entry: ['src/index.ts'],
   outDir: 'dist',
   dts: true,
   bundle: true,
