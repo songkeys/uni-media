@@ -5,6 +5,7 @@ import {
   type MediaType,
   spreadProps,
   mimeTypeToMediaType,
+  processSrc,
 } from './utils'
 import '@google/model-viewer'
 
@@ -57,22 +58,22 @@ export class UniMedia extends LitElement {
   async handleSrcChanged() {
     if (this.src) {
       try {
+        const src_ = processSrc(this.src, this.ipfsGateway)
+
         let result: Awaited<ReturnType<typeof getMediaType>>
 
         if (this.mediaType) {
           this._mediaType = this.mediaType
-          result = { mediaType: this.mediaType, mimeType: null, src: this.src }
+          result = { mediaType: this.mediaType, mimeType: null, src: src_ }
         } else if (this.mimetype) {
           this._mediaType = mimeTypeToMediaType(this.mimetype)
           result = {
             mediaType: this._mediaType,
             mimeType: this.mimetype,
-            src: this.src,
+            src: src_,
           }
         } else {
-          result = await getMediaType(this.src, {
-            ipfsGateway: this.ipfsGateway,
-          })
+          result = await getMediaType(src_)
           this._mediaType = result.mediaType
         }
 
@@ -125,7 +126,9 @@ export class UniMedia extends LitElement {
   ): void {
     super.requestUpdate(name, oldValue, options)
     if (name === 'src') {
-      this.handleSrcChanged()
+      setTimeout(() => {
+        this.handleSrcChanged()
+      }, 0)
     }
   }
 
@@ -181,5 +184,11 @@ export class UniMedia extends LitElement {
 declare global {
   interface HTMLElementTagNameMap {
     'uni-media': UniMedia
+  }
+
+  namespace JSX {
+    interface IntrinsicElements {
+      'uni-media': any
+    }
   }
 }

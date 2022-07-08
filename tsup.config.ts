@@ -13,7 +13,8 @@ export default defineConfig({
   format: ['iife', 'cjs', 'esm'],
   platform: 'browser',
   define: {
-    global: 'window',
+    window: 'globalThis',
+    global: 'globalThis',
     Buffer: 'Buffer',
   },
   inject: ['./node_modules/node-stdlib-browser/helpers/esbuild/shim.js'],

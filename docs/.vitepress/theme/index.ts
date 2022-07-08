@@ -9,7 +9,7 @@ export default {
       return
     }
 
-    const UniMedia = (await import('./../../../dist/uni-media')).UniMedia
+    const UniMedia = (await import('./../../../')).UniMedia
     app.component('uni-media', UniMedia)
   },
   Layout() {

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>&lt;uni-media> Demo</title>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../dist/uni-media.global.js"></script>
+    <script type="module" src="../dist/index.global.js"></script>
   </head>
   <body>
     <script>
@@ -28,6 +28,7 @@
       src="ipfs://bafybeigg55zmqvfouox64ljpiqrt4lscacgcf77chmz4evgqlmicfk2rni/BigBuckBunny.mp4"
       width="500"
       height="350"
+      ipfs-gateway="https://cloudflare-ipfs.com/ipfs/"
     ></uni-media>
 
     <h3>Audio</h3>
@@ -44,6 +45,15 @@
       seamless-poster
       style="height: 300px; width: 300px"
       onclick="console.log('clicked')"
+    ></uni-media>
+    <uni-media
+      src="ipfs://bafybeia6ntyml7fbcozqurtvxsbysppfrwp7ao7rd4ijulu64g2obudnmi/rss3-whitepaper-no-3.glb"
+      camera-controls
+      enable-pan
+      poster="ipfs://bafybeihxofiebkx3kux2fn2aczhv6myevndduyotmwec2uqbzej5ea5syy/rss3-whitepaper-no-3.png"
+      seamless-poster
+      style="height: 300px; width: 300px"
+      ipfs-gateway="https://ipfs.infura.io/ipfs/"
     ></uni-media>
 
     <h3>PDF</h3>
