@@ -25,7 +25,7 @@ If not specified, the mimetype will be determined automatically.
 Example:
 
 ```html
-<uni-media src="https://placekitten.com/200/300" mimeType="image/jpeg" />
+<uni-media src="https://placekitten.com/200/300" mimetype="image/jpeg" />
 ```
 
 ### `media-type`
